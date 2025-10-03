@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio simple DOM</title>
+</head>
+<body>
+    <p id="Mi parrafo">Yo solo se que no se nada.</p>
+    <button id="btnCambiar">Diego es bot en mid</button>
+
+    <script>
+  // Seleccionar el párrafo usando su id
+  const parrafo = document.getElementById("Mi parrafo");
+
+  // Seleccionar el botón usando su id
+  const boton = document.getElementById("btnCambiar");
+
+  // Escuchar el evento click en el botón y cambiar el texto y estilo del párrafo
+  boton.addEventListener("click", function() {
+    parrafo.textContent = "Todo es agua";
+    parrafo.style.color = "Blue";
+  });
+</script>
+  </body>
+</html>
